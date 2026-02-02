@@ -1,0 +1,8 @@
+## Interface: 120000
+## Title: WarGames+
+## Notes: Simple interface for challenging leaders to Arena Wargames.
+## Author: Waxilliam
+## Version: 0.1
+
+SavedVariables: WG_History
+core.lua
