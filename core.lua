@@ -145,3 +145,36 @@ SlashCmdList["VIBEWG"] = function()
 end
 
 print("|cFF00FF00WarGames+ loaded. Use /wg to open.|r")
+
+-- 7. Right-Click Menu Integration (UnitPopup)
+-- This adds "Challenge" to the right-click menu of friends/guildies
+local CHALLENGE_BUTTON_TEXT = "Challenge (WG+)"
+
+-- Function to handle the click from the right-click menu
+local function OnChallengeMenuClick(owner)
+    local name = owner.name -- The name of the person you right-clicked
+    if not name then return end
+    
+    -- We use your existing selectedArena variable
+    local command = "/sswg " .. name .. " " .. selectedArena
+    
+    local chatBox = ChatEdit_ChooseBoxForSend()
+    ChatEdit_ActivateChat(chatBox)
+    chatBox:SetText(command)
+    ChatEdit_SendText(chatBox)
+    
+    print("|cFF00FFFF[WG+] Challenging Friend:|r " .. command)
+end
+
+-- Hook into the UnitPopup system
+hooksecurefunc("UnitPopup_ShowMenu", function(dropdownMenu, which, unit, name)
+    -- 'FRIEND' is the menu type for the contact list
+    if which == "FRIEND" or which == "CHAT_ROSTER" then
+        local info = UIDropDownMenu_CreateInfo()
+        info.text = CHALLENGE_BUTTON_TEXT
+        info.owner = dropdownMenu
+        info.notCheckable = true
+        info.func = function() OnChallengeMenuClick(dropdownMenu) end
+        UIDropDownMenu_AddButton(info)
+    end
+end)
