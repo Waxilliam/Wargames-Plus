@@ -26,18 +26,18 @@ local BG_LIST = {
 
 local MAP_TEXTURES = {
     -- 1. MODERN MAPS (Using Widescreen File IDs to prevent green boxes)
-    ["Nokhudon Proving Grounds"] = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
-    ["Maldraxxus Coliseum"]      = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
-    ["Mugambala"]                = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
-    ["Hook Point"]               = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
-    ["Tiger's Peak"]             = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga",  -- Wide
-    ["Seething Shore"]           = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
-    ["Ashamane's Fall"]          = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- (Standard usually works, but this is the ID)
-    ["Black Rook Hold Arena"]    = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- (Standard)
+    ["Nokhudon Proving Grounds"] = "Interface\\AddOns\\Wargames\\media\\maps\\Nokhudon.tga", -- Wide
+    ["Maldraxxus Coliseum"]      = "Interface\\AddOns\\Wargames\\media\\maps\\Maldraxxus.tga", -- Wide
+    ["Mugambala"]                = "Interface\\AddOns\\Wargames\\media\\maps\\Mugambala.tga", -- Wide
+    ["Hook Point"]               = "Interface\\AddOns\\Wargames\\media\\maps\\Hookpoint.tga", -- Wide
+    ["Tiger's Peak"]             = "Interface\\AddOns\\Wargames\\media\\maps\\Tigerspeek.tga",  -- Wide
+    ["Seething Shore"]           = "Interface\\AddOns\\Wargames\\media\\maps\\Seething.tga", -- Wide
+    ["Ashamane's Fall"]          = "Interface\\AddOns\\Wargames\\media\\maps\\Ashamanes.tga", -- (Standard usually works, but this is the ID)
+    ["Black Rook Hold Arena"]    = "Interface\\AddOns\\Wargames\\media\\maps\\Blackrook.tga", -- (Standard)
     
     -- 2. SPECIAL CASES (Internal names differ from map names)
-    ["Ring of Valor"]            = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga",  -- "Orgrimmar Arena"
-    ["Deephaul Ravine"]          = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- TWW Map (Try this ID, or 5924295 for Wide)
+    ["Ring of Valor"]            = "Interface\\AddOns\\Wargames\\media\\maps\\Ring.tga",  -- "Orgrimmar Arena"
+    ["Deephaul Ravine"]          = "Interface\\AddOns\\Wargames\\media\\maps\\Deephaul.tga", -- TWW Map (Try this ID, or 5924295 for Wide)
 
     -- 3. CLASSIC MAPS (Text paths still work reliably for these)
     ["Nagrand Arena"]           = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenNagrandArenaBattlegrounds",
