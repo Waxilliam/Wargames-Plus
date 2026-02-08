@@ -25,22 +25,28 @@ local BG_LIST = {
 }
 
 local MAP_TEXTURES = {
-    -- Arenas (known paths)
+    -- 1. MODERN MAPS (Using Widescreen File IDs to prevent green boxes)
+    ["Nokhudon Proving Grounds"] = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
+    ["Maldraxxus Coliseum"]      = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
+    ["Mugambala"]                = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
+    ["Hook Point"]               = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
+    ["Tiger's Peak"]             = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga",  -- Wide
+    ["Seething Shore"]           = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- Wide
+    ["Ashamane's Fall"]          = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- (Standard usually works, but this is the ID)
+    ["Black Rook Hold Arena"]    = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- (Standard)
+    
+    -- 2. SPECIAL CASES (Internal names differ from map names)
+    ["Ring of Valor"]            = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga",  -- "Orgrimmar Arena"
+    ["Deephaul Ravine"]          = "Interface\\AddOns\\Wargames\\media\\comingsoon.tga", -- TWW Map (Try this ID, or 5924295 for Wide)
+
+    -- 3. CLASSIC MAPS (Text paths still work reliably for these)
     ["Nagrand Arena"]           = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenNagrandArenaBattlegrounds",
     ["Blade's Edge Arena"]      = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenBladesEdgeArena",
     ["Ruins of Lordaeron"]      = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenRuinsofLordaeronBattlegrounds",
     ["Dalaran Arena"]           = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenDalaranSewersArena",
     ["Tol'viron Arena"]         = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenTolvirArena",
-    ["Ashamane's Fall"]         = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_ArenaValSharah_wide",
-    ["Black Rook Hold Arena"]   = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_BlackrookHoldArena_wide",
-    -- Arenas (best-guess paths)
-    ["Ring of Valor"]           = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenRingofValor",
-    ["Tiger's Peak"]            = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_ArenaTigersPeak_wide",
-    ["Hook Point"]              = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_ArenaHookPoint_wide",
-    ["Mugambala"]               = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_ArenaMugambala_wide",
-    ["Maldraxxus Coliseum"]     = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_ArenaMaldraxxus_wide",
-    ["Nokhudon Proving Grounds"]= "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_ArenaNokhudon_wide",
-    -- Battlegrounds (known paths)
+    
+    -- 4. BATTLEGROUNDS
     ["Warsong Gulch"]           = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenWarsongGulch",
     ["Twin Peaks"]              = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenTwinPeaksBG",
     ["Arathi Basin"]            = "Interface\\GLUES\\LOADINGSCREENS\\LoadscreenArathiBasin",
@@ -48,9 +54,6 @@ local MAP_TEXTURES = {
     ["Eye of the Storm"]        = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenNetherBattlegrounds",
     ["Temple of Kotmogu"]       = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenValleyofPower",
     ["Silvershard Mines"]       = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenSilvershardMines",
-    -- Battlegrounds (best-guess paths)
-    ["Seething Shore"]          = "Interface\\GLUES\\LOADINGSCREENS\\LoadScreenSeethingShore",
-    ["Deephaul Ravine"]         = "Interface\\GLUES\\LOADINGSCREENS\\LoadingScreen_DeephaulRavine_wide",
 }
 
 local THEMES = {
