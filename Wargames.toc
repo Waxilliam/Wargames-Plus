@@ -1,8 +1,9 @@
 ## Interface: 120000
-## Title: WarGames+
-## Notes: Simple interface for challenging leaders to Arena Wargames.
-## Author: Waxilliam
-## Version: 0.1
+## Title: |cff00d8ffWargames+|r
+## Notes: Custom Wargame and Solo Shuffle Wargame UI
+## Author: Waxology
+## Version: 1.0
+## SavedVariables: WG_History
+## IconTexture: Interface\AddOns\Wargames\media\wglogo.tga
 
-SavedVariables: WG_History
 core.lua
